@@ -1,0 +1,5 @@
+class Device < ActiveRecord::Base
+    has_one :people
+
+    scope :sorted, lambda { order("devices.make ASC")}
+end

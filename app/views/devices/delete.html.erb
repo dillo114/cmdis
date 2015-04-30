@@ -1,0 +1,17 @@
+
+    <%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+    <div class="device delete">
+      <h2>Delete Device</h2>
+
+      <%= form_for(:devices, :url => {:action => 'destroy', :id => @devices.id}) do |f| %>
+
+       <p>Are you sure you want to delete this device?</p>
+
+
+        <div class="form-buttons">
+          <%= submit_tag("Delete Device") %>
+        </div>
+
+      <% end %>
+    </div> 

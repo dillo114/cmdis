@@ -1,0 +1,30 @@
+    <table summary="Subject form fields">
+      <tr>
+        <th><%= f.label(:make, "Make") %></th>
+        <td><%= f.text_field(:make) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:model, "Model") %></th>
+        <td><%= f.text_field(:model) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:serial_no, "Serial Number") %></th>
+        <td><%= f.text_field(:serial_no) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:available) %></th>
+        <td><%= f.check_box(:available) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:day_checked_out, "Checked Out") %></th>
+        <td><%= f.text_field(:day_checked_out) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:day_due, "Due Date") %></th>
+        <td><%= f.text_field(:day_due) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:person_rented_id_no, "Rented By") %></th>
+        <td><%= f.text_field(:person_rented_id_no) %></td>
+      </tr>
+    </table> 

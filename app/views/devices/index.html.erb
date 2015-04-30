@@ -1,0 +1,36 @@
+
+    <div class="sections index">
+      <h2>Devices</h2>
+
+      <%= link_to("Add New Device", {:action => 'new'}, :class => 'action new') %>
+
+      <table class="listing" summary="Section list">
+        <tr class="header">
+          <th>Make</th>
+          <th>Model</th>
+          <th>Serial Number</th>
+          <th>Available</th>
+          <th>Date Checked Out</th>
+          <th>Date Due</th>
+          <th>Rented By</th>
+        </tr>
+        <% @devices.each do |device| %>
+        <tr>
+          <td><%= device.make %></td>
+          <td><%= device.model %></td>
+          <td class="center"><%= device.serial_no %></td>
+          <td class="center"><%= status_tag(device.available) %></td>
+	  <td class="center"><%= device.day_checked_out %></td>
+          <td class="center"><%= device.day_due %></td>
+          <td class="center"><%= device.person_rented_id_no %></td>
+          <td class="actions">
+            <%= link_to("Show", {:action => 'show' , :id => device.id},  :class => 'action show') %>
+            <%= link_to("Edit", {:action => 'edit' , :id => device.id}, :class => 'action edit') %>
+            <%= link_to("Delete", {:action => 'delete', :id => device.id}, :class => 'action delete') %>
+          </td>
+        </tr>
+        <% end %>
+      </table>
+    </div> 
+
+

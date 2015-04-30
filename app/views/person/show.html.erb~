@@ -1,0 +1,26 @@
+
+
+    <%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+    <div class="people show">
+      <h2>Show Person</h2>
+
+     <table summary="Person detail view">
+        <tr>
+          <th>First Name</th>
+          <td><%= @person.first_name %></td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td><%= @person.last_name %></td>
+        </tr>
+        <tr>
+          <th>ID Number</th>
+          <td><%= @person.id_no %></td>
+        </tr>
+        
+      </table>
+
+    </div> 
+
+
