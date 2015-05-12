@@ -1,10 +1,12 @@
 <li><%= link_to("Back", :controller => 'checkout') %></li>
 
 <h2>Select Device/s</h2>
-
+<div class="checkout">
 <table class="listing" summary="Section list">
+
+    <%= form_for(:devices, :url => {:action => 'create'}) do |f| %>
         <tr class="header">
-          <th<M/th>
+          <th><input type="checkbox" name="header" value="header"></th>
           <th>Make</th>
           <th>Model</th>
           <th>Serial Number</th>
@@ -15,7 +17,7 @@
         </tr>
         <% @devices.each do |device| %>
         <tr>
-          <td></td>
+          <td><input type="checkbox" name="header" value="<%= device.serial_no %>"></td>
           <td><%= device.make %></td>
           <td><%= device.model %></td>
           <td class="center"><%= device.serial_no %></td>
@@ -24,5 +26,13 @@
           <td class="center"><%= device.day_due %></td>
           <td class="center"><%= device.person_rented_id_no %></td>
         </tr>
-        <% end %>
-      </table>
+</table>
+  	<div class="form-buttons">
+          <%= submit_tag("Create Device") %>
+        </div>
+
+</div>
+	<% end %>
+	
+        
+      

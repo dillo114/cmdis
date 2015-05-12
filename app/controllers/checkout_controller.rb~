@@ -1,5 +1,5 @@
 class CheckoutController < ApplicationController
   def index
-	@checkouts = Checkout.sorted
+	@devices = Device.sorted
   end
 end

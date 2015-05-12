@@ -42,6 +42,6 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  #gem 'calendar_date_select', :git => 'git://github.com/paneq/calendar_date_select.git'
+  gem 'calendar_date_select', '~> 2.0.0'
 end
 
