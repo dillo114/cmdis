@@ -60,6 +60,6 @@ def index
          # same as using "params[:subject]", except that it:
           # - raises an error if :subject is not present
           # - allows listed attributes to be mass-assigned
-          params.require(:people).permit(:first_name, :last_name, :id_no)
+          params.require(:person).permit(:first_name, :last_name, :id_no)
         end 
 end

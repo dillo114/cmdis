@@ -17,11 +17,11 @@
       </tr>
       <tr>
         <th><%= f.label(:day_checked_out, "Checked Out") %></th>
-        <td><%= f.text_field(:day_checked_out) %></td>
+        <td><%= f.date_select(:day_checked_out) %></td>
       </tr>
       <tr>
         <th><%= f.label(:day_due, "Due Date") %></th>
-        <td><%= f.text_field(:day_due) %></td>
+        <td><%= f.date_select(:day_due) %></td>
       </tr>
       <tr>
         <th><%= f.label(:person_rented_id_no, "Rented By") %></th>

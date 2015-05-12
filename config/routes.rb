@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  
+get "/" => "welcome#index", :as => "root" 
+
+
+  get 'checkout/index'
+
+  get 'welcome/index'
+
   get 'person/index'
 
   get 'person/new'

@@ -5,12 +5,38 @@
     <div class="devices show">
       <h2>Show Device</h2>
 
-      <%= form_for(:devices, :url => {:action => 'show'}) do |f| %>
-
-      <%= render(:partial => "form", :locals => {:f => f}) %>
-
+      <table summary="Subject form fields">
+      <tr>
+        <th>Make</th>
+        <td><%= @devices.make %></td>
+      </tr>
+      <tr>
+        <th>Model</th>
+        <td><%= @devices.model %></td>
+      </tr>
+      <tr>
+        <th>Serial Number</th>
+        <td><%= @devices.serial_no %></td>
+      </tr>
+      <tr>
+        <th>Available</th>
+        <td><%= @devices.available %></td>
+      </tr>
+      <tr>
+        <th>Day Checked Out</th>
+        <td><%= @devices.day_checked_out %></td>
+      </tr>
+      <tr>
+        <th>Due Date</th>
+        <td><%= @devices.day_due %></td>
+      </tr>
+      <tr>
+        <th>Rented By</th>
+        <td><%= @devices.person_rented_id_no %></td>
+      </tr>
+    </table> 
      
 
     </div> 
 
-<% end %>
+

@@ -1,0 +1,12 @@
+<% @page_title = "Manage Devices" %>
+<li><%= link_to("Back to Home", :controller => 'welcome') %></li>
+
+    <div class="menu">
+      <h2>Manage Devices!</h2>
+      <ul>
+        <li><a href="/checkout/checkout">Checkout</a></li>
+             
+        <li><%= link_to("Return", :controller => 'person') %></li>
+
+      </ul>
+    </div> 

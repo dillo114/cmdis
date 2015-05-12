@@ -59,7 +59,7 @@ class DevicesController < ApplicationController
          # same as using "params[:subject]", except that it:
           # - raises an error if :subject is not present
           # - allows listed attributes to be mass-assigned
-          params.require(:devices).permit(:serial_no, :make, :model, :available, :day_checked_out, :person_rented_id_no)
+          params.require(:devices).permit(:serial_no, :make, :model, :available, :day_checked_out, :day_due, :person_rented_id_no)
         end 
 
 end

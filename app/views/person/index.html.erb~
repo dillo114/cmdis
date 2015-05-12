@@ -1,6 +1,6 @@
 
     <div class="sections index">
-      <h2>Devices</h2>
+      <h2>People</h2>
 
       <%= link_to("Add New Person", {:action => 'new'}, :class => 'action new') %>
 
