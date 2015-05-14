@@ -5,6 +5,14 @@ get "/" => "welcome#index", :as => "root"
 
   get 'checkout/index'
 
+  get 'checkout/checkout'
+
+  get 'checkout/checkin'
+
+  get 'checkout/select_date'
+
+  get 'checkout/select_person'
+
   get 'welcome/index'
 
   get 'person/index'

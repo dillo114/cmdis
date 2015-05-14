@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
   
 get "/" => "welcome#index", :as => "root" 
-get "/" => "checkout#checkout", :as => "checkout" 
+
 
   get 'checkout/index'
+
+  get 'checkout/checkout'
+
+  get 'checkout/checkin'
 
   get 'welcome/index'
 
