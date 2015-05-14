@@ -1,0 +1,12 @@
+ 
+ <%= form_for(:devices, :url => {:action => 'update_dates', :id => @devices.id}) do |f| %>
+
+        <%= render(:partial => "form", :locals => {:f => f}) %>
+
+        <div class="form-buttons">
+          <%= submit_tag("Update Device Dates") %>
+        </div>
+
+      <% end %>
+
+

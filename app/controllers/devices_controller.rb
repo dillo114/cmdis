@@ -4,7 +4,7 @@ class DevicesController < ApplicationController
   end
 
   def new
-    @devices = Device.new({:serial_no => "00000"})
+    @devices = Device.new({:serial_no => "00000", :available => true})
   end
 
   def show
@@ -61,5 +61,6 @@ class DevicesController < ApplicationController
           # - allows listed attributes to be mass-assigned
           params.require(:devices).permit(:serial_no, :make, :model, :available, :day_checked_out, :day_due, :person_rented_id_no)
         end 
+  
 
 end

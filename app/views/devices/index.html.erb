@@ -7,7 +7,8 @@
 
       <table class="listing" summary="Section list">
         <tr class="header">
-          <th><input type="checkbox" name="header" value="header"></th>
+          
+	  <th>ID Number</th>
           <th>Make</th>
           <th>Model</th>
           <th>Serial Number</th>
@@ -18,7 +19,8 @@
         </tr>
         <% @devices.each do |device| %>
         <tr>
-          <td><input type="checkbox" name="header" value="<%= device.id %>"></td>
+          
+	  <td> <%= device.id %> </td>
           <td><%= device.make %></td>
           <td><%= device.model %></td>
           <td class="center"><%= device.serial_no %></td>

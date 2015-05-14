@@ -1,0 +1,12 @@
+<table>
+	<tr>
+	<th><%= f.label(:day_checked_out, "Date Checked Out") %></th>
+		<td><%= f.date_select(:day_checked_out) %></td>
+	</tr>
+
+	<tr>
+	<th><%= f.label(:day_due, "Due Date") %></th>
+		<td><%= f.date_select(:day_due, default: 3.days.from_now) %></td>
+	</tr>
+
+</table>

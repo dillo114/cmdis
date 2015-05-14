@@ -1,7 +1,14 @@
 class Person < ActiveRecord::Base
 
     has_many :device
-
     scope :available, lambda {where(:available => true)}
-    scope :sorted, lambda { order("people.first_name ASC")}
+    scope :sorted, lambda { order("people.last_name ASC")}
+
+    def name_id
+        "#{last_name}. #{id_no}"
+    end
+
+    
+
+    
 end

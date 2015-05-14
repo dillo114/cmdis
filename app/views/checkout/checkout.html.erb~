@@ -1,38 +1,34 @@
 <li><%= link_to("Back", :controller => 'checkout') %></li>
 
-<h2>Select Device/s</h2>
+<h2>Select Device</h2>
 <div class="checkout">
 <table class="listing" summary="Section list">
 
-    <%= form_for(:devices, :url => {:action => 'create'}) do |f| %>
+   
         <tr class="header">
-          <th><input type="checkbox" name="header" value="header"></th>
+          <th></th>
           <th>Make</th>
           <th>Model</th>
           <th>Serial Number</th>
           <th>Available</th>
-          <th>Date Checked Out</th>
-          <th>Date Due</th>
-          <th>Rented By</th>
         </tr>
+       
+        
         <% @devices.each do |device| %>
         <tr>
-          <td><input type="checkbox" name="header" value="<%= device.serial_no %>"></td>
+          <td><%= button_to("SELECT", {:action => 'update' , :id => device.id}, :class => 'action edit') %></td>
           <td><%= device.make %></td>
           <td><%= device.model %></td>
-          <td class="center"><%= device.serial_no %></td>
-          <td class="center"><%= status_tag(device.available) %></td>
-	  <td class="center"><%= device.day_checked_out %></td>
-          <td class="center"><%= device.day_due %></td>
-          <td class="center"><%= device.person_rented_id_no %></td>
+          <td><%= device.serial_no %></td>
+          <td><%= device.available %></td>
         </tr>
+<% end %>
 </table>
-  	<div class="form-buttons">
-          <%= submit_tag("Create Device") %>
-        </div>
+  	
 
 </div>
-	<% end %>
+	
+
 	
         
       

@@ -17,7 +17,7 @@
         
         <% @devices.each do |device| %>
         <tr>
-          <td><%= button_to("SELECT", {:action => 'checkin_device' , :id => device.id}, :class => 'action edit') %></td>
+          <td><%= button_to("SELECT", {:action => 'checkin' , :id => device.id}, :class => 'action edit') %></td>
 	  <td> <%= device.id %> </td>
           <td><%= device.make %></td>
           <td><%= device.model %></td>

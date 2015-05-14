@@ -1,0 +1,30 @@
+
+    <div class="sections index">
+      <h2>People</h2>
+
+
+      <table class="listing" summary="Section list">
+        <tr class="header">
+	  <th>
+            
+          </th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID Number</th>
+         
+        </tr>
+        <% @persons.each do |person| %>
+        <tr>
+  	  <td class="actions">
+
+          </td>
+          <td><%= person.first_name %></td>
+          <td><%= person.last_name %></td>
+          <td><%= person.id_no %></td>
+          
+        </tr>
+        <% end %>
+      </table>
+    </div> 
+
+
