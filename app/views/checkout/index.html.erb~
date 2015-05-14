@@ -4,9 +4,11 @@
     <div class="menu">
       <h2>Manage Devices!</h2>
       <ul>
-        <li><a href="/checkout/checkout">Checkout</a></li>
+        
+	<li><%= link_to("SELECT", {:action => 'checkout'}) %></li>
              
-        <li><%= link_to("Return", :controller => 'person') %></li>
+       
+	<li><%= link_to("SELECT", {:action => 'checkin'}) %></li>
 
       </ul>
     </div> 

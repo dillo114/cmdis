@@ -4,9 +4,11 @@
     <div class="menu">
       <h2>Manage Devices!</h2>
       <ul>
-        <li><a href="/checkout/checkout">Check Out</a></li>
+        
+	<li><%= link_to("Check Out", {:action => 'checkout'}) %></li>
              
-        <li><a href="/checkout/checkin">Check In</a></li>
+       
+	<li><%= link_to("Check In", {:action => 'checkin'}) %></li>
 
       </ul>
     </div> 
