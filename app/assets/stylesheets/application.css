@@ -14,7 +14,10 @@
  *= require_self
  */
 
-
+img {
+vertical-align: top;
+text-align: center;
+}
 
 body {
 background-color:#A82439;
@@ -39,6 +42,13 @@ color :#C0C0C0;
 font-size:18px;
 text-decoration :normal;
 background :#A82439;
+}
+ul, li {
+display: inline;
+padding: 6px;
+text-align: right;
+margin: 65px;
+font-size:24px;
 }
 h1 {
 font-family:Helvetica;
@@ -70,6 +80,7 @@ text-align:left;
 #banner {
  float: center;
 }
+
 
 
 

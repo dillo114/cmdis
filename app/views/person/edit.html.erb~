@@ -1,7 +1,8 @@
-
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
+<br></br>
     <%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
 
-    <div class="subjects edit">
+    <div class="people edit">
       <h2>Update Person</h2>
 
       <%= form_for(:persons, :url => {:action => 'update', :id => @persons.id}) do |f| %>
@@ -12,5 +13,7 @@
           <%= submit_tag("Update Person") %>
         </div>
 
+
+      
       <% end %>
     </div> 

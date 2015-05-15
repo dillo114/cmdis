@@ -6,7 +6,23 @@
 
       <%= form_for(:devices, :url => {:action => 'create'}) do |f| %>
 
-      <%= render(:partial => "form", :locals => {:f => f}) %>
+      
+	    <table summary="Subject form fields">
+      <tr>
+        <th><%= f.label(:make, "Make") %></th>
+        <td><%= f.text_field(:make) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:model, "Model") %></th>
+        <td><%= f.text_field(:model) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:serial_no, "Serial Number") %></th>
+        <td><%= f.text_field(:serial_no) %></td>
+      </tr>
+      
+    </table> 
+
 
         <div class="form-buttons">
           <%= submit_tag("Create Device") %>

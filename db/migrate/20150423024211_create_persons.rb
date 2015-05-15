@@ -1,4 +1,4 @@
-class CreatePeople < ActiveRecord::Migration
+class CreatePersons < ActiveRecord::Migration
   def up
     create_table :people do |t|
       t.string "first_name", :limit => 50

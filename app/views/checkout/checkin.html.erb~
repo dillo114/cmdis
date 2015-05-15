@@ -1,3 +1,4 @@
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
 <li><%= link_to("Back", :controller => 'checkout') %></li>
 
 <h2>Select Device to Check In</h2>
@@ -22,7 +23,7 @@
           <td><%= device.make %></td>
           <td><%= device.model %></td>
           <td><%= device.serial_no %></td>
-          <td><%= device.available %></td>
+          <td><%= device.person_rented_id_no %></td>
         </tr>
 <% end %>
 </table>

@@ -62,7 +62,7 @@ class CheckoutController < ApplicationController
    # Find an existing object using form parameters
     @devices = Device.find(params[:id])
     # Update the object
-    if @devices.update_attributes(:available => true)
+    if @devices.update_attributes(:available => true, :day_checked_out => "", :day_due => "", :person_rented_id_no.nil)
       # If update succeeds, redirect to the index action
       flash[:notice] = "Device updated successfully."
       render('index')

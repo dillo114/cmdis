@@ -1,5 +1,5 @@
 
-
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
 
     <% @page_title = "Welcome" %>
 
@@ -7,9 +7,9 @@
    <body>
     <div class="menu">
       
-      
+      <br></br>
       <ul>
-        <li><%= link_to("Devices", :controller => 'devices') %></li>
+        <li><h2><%= link_to("Devices", :controller => 'devices') %></h2></li>
         <li><%= link_to("People", :controller => 'person') %></li>
         <li><%= link_to("Manage Devices", :controller => 'checkout') %></li>
       </ul>

@@ -1,4 +1,5 @@
 <%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
+<br></br>
 <%= link_to("Back to Home", :controller => 'welcome') %>
     <div class="sections index">
       <h2>People</h2>
@@ -12,7 +13,7 @@
           <th>First Name</th>
           <th>Last Name</th>
           <th>ID Number</th>
-          <th">Action</th>
+          <th>Action</th>
         </tr>
         <% @persons.each do |person| %>
         <tr>
@@ -21,7 +22,7 @@
           <td><%= person.id_no %></td>
           <td>
             <%= link_to("Show", {:action => 'show' , :id => person.id},  :class => 'action show') %>
-            <%= link_to("Edit", {:action => 'edit' , :id => person.id}, :class => 'action edit') %>
+            <%= link_to("Edit", {:action => 'edit' , :id => persons.id}, :class => 'action edit') %>
             <%= link_to("Delete", {:action => 'delete', :id => person.id}, :class => 'action delete') %>
           </td>
         </tr>

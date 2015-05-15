@@ -1,5 +1,7 @@
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
+<br></br> 
  
- <%= form_for(:devices, :url => {:action => 'update_dates', :id => @devices.id}) do |f| %>
+<%= form_for(:devices, :url => {:action => 'update_dates', :id => @devices.id}) do |f| %>
 
         <%= render(:partial => "form", :locals => {:f => f}) %>
 

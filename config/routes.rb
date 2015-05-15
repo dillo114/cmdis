@@ -25,15 +25,15 @@ get "/" => "welcome#index", :as => "root"
 
   get 'person/show'
 
-  get 'people/index'
+  #get 'people/index'
 
-  get 'people/new'
+  #get 'people/new'
 
-  get 'people/edit'
+  #get 'people/edit'
 
-  get 'people/delete'
+  #get 'people/delete'
 
-  get 'people/show'
+  #get 'people/show'
 
   get 'devices/index'
 

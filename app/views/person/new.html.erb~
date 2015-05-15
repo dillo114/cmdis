@@ -1,10 +1,11 @@
-
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
+<br></br>
     <%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
 
     <div class="devices new">
-      <h2>Add Device</h2>
+      <h2>Add Person</h2>
 
-      <%= form_for(:people, :url => {:action => 'create'}) do |f| %>
+      <%= form_for(:persons, :url => {:action => 'create'}) do |f| %>
 
       <%= render(:partial => "form", :locals => {:f => f}) %>
 

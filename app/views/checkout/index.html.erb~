@@ -1,14 +1,16 @@
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
 <% @page_title = "Manage Devices" %>
-<li><%= link_to("Back to Home", :controller => 'welcome') %></li>
+<br></br>
+<%= link_to("Back to Home", :controller => 'welcome') %>
 
     <div class="menu">
       <h2>Manage Devices!</h2>
-      <ul>
+      
         
-	<li><%= link_to("Check Out", {:action => 'checkout'}) %></li>
+	<%= link_to("Check Out", {:action => 'checkout'}) %>
              
        
-	<li><%= link_to("Check In", {:action => 'checkin'}) %></li>
+	<%= link_to("Check In", {:action => 'checkin'}) %>
 
-      </ul>
+      
     </div> 

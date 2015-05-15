@@ -10,7 +10,7 @@
       </tr>
       <tr>
         <th><%= f.label(:id_no, "ID Number") %></th>
-        <td><%= f.text_field(:id_no) %></td>
+        <td><%= f.text_field(@persons.id_no) %></td>
       </tr>
       
     </table> 
