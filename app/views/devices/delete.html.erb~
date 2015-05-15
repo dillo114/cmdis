@@ -10,7 +10,7 @@
 
 
         <div class="form-buttons">
-          <%= submit_tag("Delete Subject") %>
+          <%= submit_tag("Delete Device") %>
         </div>
 
       <% end %>

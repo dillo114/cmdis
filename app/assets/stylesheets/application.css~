@@ -68,7 +68,7 @@ color :#000000;
 text-align:left;
 }
 #banner {
- float: center;
+align:center;
 }
 
 

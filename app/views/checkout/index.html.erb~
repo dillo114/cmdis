@@ -5,10 +5,10 @@
       <h2>Manage Devices!</h2>
       <ul>
         
-	<li><%= link_to("SELECT", {:action => 'checkout'}) %></li>
+	<li><%= link_to("Check Out", {:action => 'checkout'}) %></li>
              
        
-	<li><%= link_to("SELECT", {:action => 'checkin'}) %></li>
+	<li><%= link_to("Check In", {:action => 'checkin'}) %></li>
 
       </ul>
     </div> 

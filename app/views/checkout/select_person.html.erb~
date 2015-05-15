@@ -16,6 +16,7 @@
         <% @persons.each do |person| %>
         <tr>
   	  <td class="actions">
+            <%= button_to("SELECT PERSON", {:action => 'update_renter' , :id => @devices.id, :p_id => person.id},  :class => 'action show') %>
 
           </td>
           <td><%= person.first_name %></td>

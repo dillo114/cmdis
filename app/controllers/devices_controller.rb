@@ -14,6 +14,7 @@ class DevicesController < ApplicationController
   def create
         # Instantiate a new object using form parameters
         @devices = Device.new(device_params)
+        
         # Save the object
         if @devices.save
           # If save succeeds, redirect to the index action

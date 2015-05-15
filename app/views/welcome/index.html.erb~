@@ -3,11 +3,16 @@
 
     <% @page_title = "Welcome" %>
 
+
+   <body>
     <div class="menu">
-      <h2>Welcome to CMDIS</h2>
+      
+      
       <ul>
         <li><%= link_to("Devices", :controller => 'devices') %></li>
         <li><%= link_to("People", :controller => 'person') %></li>
         <li><%= link_to("Manage Devices", :controller => 'checkout') %></li>
       </ul>
     </div> 
+
+   </body>

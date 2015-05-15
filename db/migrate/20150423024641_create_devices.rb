@@ -5,8 +5,8 @@ class CreateDevices < ActiveRecord::Migration
     t.string "make", :limit => 50
     t.string "model", :limit => 50
     t.boolean("available", :default=>true)
-    t.datetime "day_checked_out"
-    t.datetime "day_due"
+    t.date "day_checked_out"
+    t.date "day_due"
     t.integer "person_rented_id_no"
       t.timestamps null: false
     end

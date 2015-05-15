@@ -1,9 +1,13 @@
-
+<div class="banner">
+	<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
+</div
     <div class="sections index">
       <%= link_to("Back to Home", :controller => 'welcome') %>
       <h2>Devices</h2>
 
       <%= link_to("Add New Device", {:action => 'new'}, :class => 'action new') %>
+	
+	<br></br>
 
       <table class="listing" summary="Section list">
         <tr class="header">

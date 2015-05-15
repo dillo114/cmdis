@@ -4,7 +4,7 @@
         <%= render(:partial => "form", :locals => {:f => f}) %>
 
         <div class="form-buttons">
-          <%= submit_tag("Update Device") %>
+          <%= submit_tag("Update Device Dates") %>
         </div>
 
       <% end %>

@@ -7,6 +7,7 @@
    
         <tr class="header">
           <th></th>
+	  <th> ID </th>
           <th>Make</th>
           <th>Model</th>
           <th>Serial Number</th>
@@ -17,6 +18,7 @@
         <% @devices.each do |device| %>
         <tr>
           <td><%= button_to("SELECT", {:action => 'update' , :id => device.id}, :class => 'action edit') %></td>
+	  <td> <%= device.id %> </td>
           <td><%= device.make %></td>
           <td><%= device.model %></td>
           <td><%= device.serial_no %></td>

@@ -1,13 +1,15 @@
-
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
     <div class="sections index">
       <%= link_to("Back to Home", :controller => 'welcome') %>
       <h2>Devices</h2>
 
       <%= link_to("Add New Device", {:action => 'new'}, :class => 'action new') %>
+	
+	<br></br>
 
       <table class="listing" summary="Section list">
         <tr class="header">
-          <th><input type="checkbox" name="header" value="header"></th>
+          
 	  <th>ID Number</th>
           <th>Make</th>
           <th>Model</th>
@@ -19,7 +21,7 @@
         </tr>
         <% @devices.each do |device| %>
         <tr>
-          <td><input type="checkbox" name="header" value="<%= device.id %>"></td>
+          
 	  <td> <%= device.id %> </td>
           <td><%= device.make %></td>
           <td><%= device.model %></td>

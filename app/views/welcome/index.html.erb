@@ -1,13 +1,18 @@
 
-
+<%= image_tag("banner.png", :size=>'760x100', :alt=>'Panther Logo')%>
 
     <% @page_title = "Welcome" %>
 
+
+   <body>
     <div class="menu">
-      <h2>Welcome to the Chapman Mobile Device Inventory System</h2>
+      
+      
       <ul>
         <li><%= link_to("Devices", :controller => 'devices') %></li>
         <li><%= link_to("People", :controller => 'person') %></li>
         <li><%= link_to("Manage Devices", :controller => 'checkout') %></li>
       </ul>
     </div> 
+
+   </body>

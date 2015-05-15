@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20150512043545) do
     t.string   "make",                limit: 50
     t.string   "model",               limit: 50
     t.boolean  "available",           limit: 1,  default: true
-    t.datetime "day_checked_out"
-    t.datetime "day_due"
+    t.date     "day_checked_out"
+    t.date     "day_due"
     t.integer  "person_rented_id_no", limit: 4
     t.datetime "created_at",                                    null: false
     t.datetime "updated_at",                                    null: false

@@ -1,2 +1,16 @@
-<h1>Devices#edit</h1>
-<p>Find me in app/views/devices/edit.html.erb</p>
+
+    <%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+    <div class="subjects edit">
+      <h2>Update Device</h2>
+
+      <%= form_for(:devices, :url => {:action => 'update', :id => @devices.id}) do |f| %>
+
+        <%= render(:partial => "form", :locals => {:f => f}) %>
+
+        <div class="form-buttons">
+          <%= submit_tag("Update Device") %>
+        </div>
+
+      <% end %>
+    </div> 
